@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&family=Poppins:wght@100;500;600;700&family=Zen+Antique&family=Zen+Old+Mincho:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Weather API</title>
+    <link rel="icon" href="./New folder/images.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="mainDiv">
+    <div class="popupOrModal">
+        <h1 class="title">Weather App.</h1>
+        <h2>Change Location</h2>
+        <div class="separate"></div>
+        <div class="city-name">
+            <label for="city" style="margin-bottom: 5px;">City:</label>
+            <p class="info-text"></p>
+            <input type="text" id="city" class="cityName" placeholder="Enter Your City Name.">
+        </div>
+        <div class="changeBtn">
+        <button class="modalBtn">Change</button>
+        <button class="modalBtn1">Device Location</button>
+        </div>
+    <!-- <span class="modal-close">&times;</span> -->
+    </div>
+</div>
+
+
+<div class="main-container">
+    <div class="container">
+        <div class="header">Weather API</div>
+        <img src="./New folder/clear.svg" alt="">
+        <section>
+            <div class="temperature"><p>20&#176; <span>C</span></p></div>
+            <div><h5><i class="fas fa-thermometer-three-quarters" style="color:#07a2f0;"></i> Feel Like:</h5></div>
+            <div class="condition">Broken Clouds</div>
+            <div class="city">
+                <i class="fas fa-map-marker-alt" style="color:#07a2f0;"></i>
+                <span class="City">Chittagong</span>,
+                <span class="country">Bangladesh</span>
+            </div>
+        </section>
+    
+        <ul>
+            <li class="humidity"><i class="fas fa-tint"></i>Humidity: </li>
+            <li class="pressure">Pressure: </li>
+            <li class="windspeed">Wind Speed:</li>
+        </ul>
+    
+        <button id="containerBtn" type="button">Change Location</button>
+    </div>
+</div>
+<script src="script.js"></script>
+<script src="UI.js"></script>
+<script src="weather.js"></script>
+</body>
+</html>
